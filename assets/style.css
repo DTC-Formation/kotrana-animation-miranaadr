@@ -3,7 +3,7 @@ body{
     height: 1200px;
     background-color: aquamarine;
 }
-table , th , td{
+table , tr , td{
     border: 1px black solid;
     border-radius: collapse;
 }
@@ -15,5 +15,101 @@ table , th , td{
     text-align: center;
 }
 td{
-    width: 15%;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+.anim1 img{
+    animation-name: extraterrestre;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes extraterrestre {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 5%;
+    }
+    40% {
+        margin-left: 15%;
+    }
+    60% {
+        margin-left: 25%;
+    }
+    80% {
+        margin-left: 50%;
+    }
+    100% {
+        margin-left: 70%;
+    }
+}
+.anim2{
+    width: 100px;
+    height:200px;
+    background-color: black;
+    margin: auto;
+    border-radius: 50%;
+
+    transition-property: transform;
+    animation-name: rotate-anim2; 
+    animation-duration: 1.2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate-anim2 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+  
+
+.anim3 img { 
+    height: 200px;
+    width: 250px;
+    margin: auto;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: #008CBA;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .anim3:hover .overlay {
+    opacity: 0;
+  }
+
+.anim4{
+    width: 100px;
+    height:200px;
+    background-color: black;
+    margin: auto;
+}
+.anim5{
+    width: 100px;
+    height:200px;
+    background-color: black;
+    margin: auto;
+}
+.anim6{
+    width: 100px;
+    height:200px;
+    background-color: black;
+    margin: auto;
+
+}
+
+
+
+
+
+
+  
+  

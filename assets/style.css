@@ -86,35 +86,72 @@ td{
 }
   
 
-.anim3 img { 
-    height: 200px;
-    width: 250px;
-    margin: auto;
-    opacity: 1;
-    transition: .5s ease;
-    background-color: #008CBA;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  .anim3:hover .overlay {
+.anim3 img:hover { 
     opacity: 0;
+    
   }
-
-.anim4{
+  .anim4{
+    display:flex;
+  }
+.anim4 h3{
+    text-align: center;
+    color: white;
     width: 100px;
-    height:200px;
-    background-color: black;
-    margin: auto;
+    height:100px;
+    background-color: rgba(168, 166, 39, 0.733);
+    padding-top:60px;
+    margin-left:15px;
 }
-.anim5{
+.anim4 h3:hover{
+    animation:animation-4 6s 1s;    
+}
+@keyframes animation-4 {
+    0% {
+        margin-left: 0%;
+        border-radius: 0%;
+        background-color: chartreuse;
+    }
+    25%{
+        margin-left:25%;
+        border-radius:25%;
+        background-color: rgba(129, 209, 49, 0.822);
+    }
+    50%{
+        margin-left:50%;
+        border-radius:50%;
+        background-color: rgba(182, 240, 124, 0.349);
+    }
+    75%{
+        margin-left:75%;
+        border-radius:75%;
+        background-color: rgba(39, 56, 22, 0.363);
+    }
+    100%{
+        margin-left:85%;
+        border-radius:100%;
+        background-color: rgba(12, 22, 1, 0.301);
+        
+    }
+    
+}
+.anim5 p{
+    opacity: 0;
+    animation: p infinite 3s 4s;
+    font-size: large;
+    color: aliceblue;
     width: 100px;
-    height:200px;
-    background-color: black;
-    margin: auto;
+}
+@keyframes p {
+    from {
+        margin: auto;
+        opacity: 0;
+    }
+    to {
+        margin: auto;
+        opacity: 1;
+        background-color:rgba(168, 166, 39, 0.733) ;
+        transform: scale(4);
+    }
 }
 .anim6{
     width: 100px;
@@ -140,8 +177,10 @@ and (max-width:760px) {
     flex-direction: column;
     }
     .anim3 img { 
-        height: 100px;
+        height: 50px;
         width: 150px;
+        top: 5%;
+        left:50%;
     }
     .anim4{
         width: 100px;

@@ -1,6 +1,6 @@
 body{
-    width: 1600px;
-    height: 1200px;
+    width: 100%;
+    height: 100%;
     background-color: aquamarine;
 }
 table , tr , td{
@@ -9,7 +9,7 @@ table , tr , td{
 }
 .container{
     margin: auto;
-    width: 100%;
+    width: 95%;
 }
 .header h1{
     text-align: center;
@@ -126,7 +126,44 @@ td{
 
 
 
+@media only screen 
+and (max-width:760px) {
+    body{
+        background-color: aquamarine;
+    }
+    tr,td{
+        width: 100%;
+        background-color: black;
+    }
+    tr {
+    display: flex;
+    flex-direction: column;
+    }
+    .anim3 img { 
+        height: 100px;
+        width: 150px;
+    }
+    .anim4{
+        width: 100px;
+        height:200px;
+        background-color: white;
+        margin: auto;
+    }
+    .anim5{
+        width: 100px;
+        height:200px;
+        background-color: white;
+        margin: auto;
+    }
+    .anim6{
+        width: 100px;
+        height:200px;
+        background-color: white;
+        margin: auto;
+    
+    }
 
+}
 
 
   

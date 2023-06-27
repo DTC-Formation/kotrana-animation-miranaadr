@@ -1,0 +1,19 @@
+body{
+    width: 1600px;
+    height: 1200px;
+    background-color: aquamarine;
+}
+table , th , td{
+    border: 1px black solid;
+    border-radius: collapse;
+}
+.container{
+    margin: auto;
+    width: 100%;
+}
+.header h1{
+    text-align: center;
+}
+td{
+    width: 15%;
+}

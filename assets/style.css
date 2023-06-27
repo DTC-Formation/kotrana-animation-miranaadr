@@ -58,13 +58,31 @@ td{
 
     transition-property: transform;
     animation-name: rotate-anim2; 
-    animation-duration: 1.2s; 
+    animation-duration: 4s; 
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 @keyframes rotate-anim2 {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    0% {
+        transform: rotate(0deg);
+        background-color: #008CBA;
+    }
+    25% {
+        transform: rotate(30deg);
+        background-color: rgb(164, 157, 172);
+    }
+    50% {
+        transform: rotate(100deg);
+        background-color:cornflowerblue;
+    }
+    75% {
+        transform: rotate(200deg);
+        background-color:darkslateblue;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: blueviolet;
+    }
 }
   
 
